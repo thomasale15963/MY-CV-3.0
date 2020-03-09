@@ -6,30 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Alemayehu</title>
 </head>
-<link rel="icon" href="./assets/images/circle laptop.png">
 
 <body>
+    <hr>
+    <a href="index.html">Home</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="contact.html">Contact</a>
+    <hr>
 
     <table>
-        <tr>
-            <td>A</td>
-        </tr>
 
         <tr>
-            <tr>
-                <td>B</td>
-                <td>C</td>
-            </tr>
-            <td>E</td>
+            <td>
+                <img src="./assets/images/bulb.jpg" alt="Image" width="500" height="600">
+            </td>
+
+            <td>
+                <hr>
+                <h3>Contact Me</h3>
+                <hr>
+
+                <form method="POST" action="mailto:thomas2alexmech@gmail.com" enctype="utf-8">
+                    <table cellspacing=10>
+                        <tr>
+                            <td><label for=fName "">First Name *:</td>
+                                <td><input type="text" placeholder = "Abebe" id = fName name="fName" pattern = "[a-z]*{4,12}" required></td>
+                            </tr>
+                    
+                            <tr>
+                                <td><label for=lName"">Last Name *: </label> </td>
+                            <td><input type="text" id=lName placeholder="Belete" name="lName" pattern="[a-z]*{4,12}" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email">Email *:</label> </td>
+                            <td><input type="email" id="email " placeholder="abebe@gmail.com" name="email" required></td>
+                        </tr>
+
+                        <tr>
+
+                            <td>Country:</td>
+                            <td><select name="Country" id="">
+                                    <option value="ETH">Ethiopia</option>
+                                    <option value="FR">France</option>
+                                    <option value="GER">Germany</option>
+                                    <option value="CHI">China</option>
+                                </select></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="phone ">Phone Number:</label>
+                            </td>
+                            <td>
+                                <select name="phone_code " id="phone_code ">
+                                    <option value="+251 ">+251</option>
+                                    <option value="+33 ">+33</option>
+                                    <option value="+49 ">+49</option>
+                                    <option value="+86 ">+86</option>
+                                    <option value="+254 ">+254</option>
+                                    <option value="+256 ">+256</option>
+                                    <option value="+61 ">+61</option>
+                                    <option value="+45 "></option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="phone " name="phone " pattern="[0,9]*{8,10} ">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="rating">Rating of my Cv </label></td>
+                            <td><input type="range" name="rating" id="price" min="0" max="100" step="1" value="50">
+                                <output class="rating-output" for="rating"></output></td>
+                        </tr>
+
+                        <tr>
+                            <td>Comment:</td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+            </td>
         </tr>
 
-        <tr>
-            <td>F</td>
-        </tr>
 
+        </table>
+
+        </form>
+        </td>
+        </tr>
 
     </table>
 
 </body>
 
 </html>
+
+<!-- date -->
+<!-- password -->
+<!-- education -->
