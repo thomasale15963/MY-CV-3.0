@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Alemayehu</title>
 </head>
+<link rel="icon" href="./assets/images/circle suit.png">
 
-<body background="./assets/images/cloud.jpg">
+<body background="./assets/images/abstract-doodle-blue-flower-pattern-background_80399-13.jpg">
     <table>
         <!-- Nav bar starts-->
         <table cellspacing=12 align="center" bgcolor="#BAB2B5">
@@ -68,18 +69,18 @@
                     <form method="POST" action="mailto:thomas2alexmech@gmail.com" enctype="utf-8">
                         <table cellspacing=10 bgcolor="#BAB2B5">
                             <tr>
-                                <td><label for=fName "">First Name:</td>
-                                <td><input type="text" placeholder = "Abebe" id = fName name="fName" pattern = "[a-z]*{2,12}" ></td>
+                                <td><label for=fName "">First Name*:</td>
+                                <td><input type="text" placeholder = "Abebe" id = fName name="fName" pattern = "[A-Za-z]{2,12}" required ></td>
                             </tr>
                     
                             <tr>
-                                <td><label for=lName"">Last Name: </label> </td>
-                                <td><input type="text" id=lName placeholder="Belete" name="lName" pattern="[a-z] {4,12}"> </td>
+                                <td><label for=lName"">Last Name*: </label> </td>
+                                <td><input type="text" id=lName placeholder="Belete" name="lName" pattern="[A-za-z]{4,12}" required> </td>
                             </tr>
 
                             <tr>
                                 <td><label for="email">Email *:</label> </td>
-                                <td><input type="email" id="email " placeholder="abebe@gmail.com" name="email"></td>
+                                <td><input type="email" id="email " placeholder="abebe@gmail.com" name="email" required></td>
                             </tr>
 
                             <tr>
@@ -89,6 +90,16 @@
 
                                 <td>
                                     <input type="date" name="Month" id="" min="2020-03-11">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="">Password *:</label>
+                                </td>
+
+                                <td>
+                                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                                 </td>
                             </tr>
 
@@ -120,7 +131,7 @@
                                 </select>
                                 </td>
                                 <td>
-                                    <input type="tel" id="phone " name="phone " pattern="[0,9]*{3}" placeholder="000000">
+                                    <input type="tel" id="phone " name="phone " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000000">
                                 </td>
                             </tr>
 
@@ -144,11 +155,59 @@
 
             </table>
 
-            </form>
-            </td>
+            </form </td>
             </tr>
 
         </table>
+
+        <hr>
+
+        <table align="center" bgcolor="#BAB2B5" cellspacing=10>
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/fb.png" alt="" height="30" width="30"></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="./assets/images/insta.webp" alt="" height="30" width="30"></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>
+                    <a href="https://telegram.org/" target="_blank"><img src="./assets/images/telegram.jpg" alt="" height="30" width="30"></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>
+                    <a href="https://www.whatsapp.com/" target="_blank"><img src="./assets/images/whatsapp.jpg" alt="" height="30" width="30"></a>
+                </td>
+
+            </tr>
+        </table>
+
+        <hr>
+        <table bgcolor="#BAB2B5" align="center">
+            <tr>
+                <td>
+                    Developed by Thomas Alemayehu &copy;
+                </td>
+
+            </tr>
+
+        </table>
+        <hr>
+
+
 
 </body>
 
